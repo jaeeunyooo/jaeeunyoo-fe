@@ -28,7 +28,7 @@ function PostSummaryContent() {
     <div id="core-wrapper" className="PostSummaryContent col-12 col-lg-11 col-xl-9 pr-xl-4">
       <div className="post pl-1 pr-1 pl-md-2 pr-md-2">
         {
-          postSummaryPage && postSummaryPage.content.map((postSummary) => (
+          postSummaryPage && postSummaryPage.content && postSummaryPage.content.map((postSummary) => (
             <div key={postSummary.postId} id="post-list">
               <div className="post-preview">
                 <h1>
