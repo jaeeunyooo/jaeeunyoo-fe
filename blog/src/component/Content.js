@@ -15,7 +15,7 @@ export default function Content(props) {
 }
 
 function Panel() {
-  const [recentPosts, setRecentPosts] = useState(null);
+  const [recentPosts, setRecentPosts] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3000/mock/recentPosts.json")
       .then((res) => res.json())
@@ -24,7 +24,7 @@ function Panel() {
       });
   }, []);
 
-  const [trendingTags, setTrendingTags] = useState(null);
+  const [trendingTags, setTrendingTags] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3000/mock/trendingTags.json")
       .then((res) => res.json())
