@@ -2,6 +2,7 @@ import SideBar from '../component/SideBar';
 import TopBar from '../component/TopBar';
 import Content from '../component/Content';
 import Footer from '../component/Footer';
+import Comment from "../component/Comment";
 
 export default function Post(props) {
   return (
@@ -419,6 +420,7 @@ function PostContent() {
           </div>
         </div>
       </div>
+      <Comment/>
     </div>
   );
 }
