@@ -4,7 +4,7 @@ export default function TopBar(props) {
     let query = event.target.value;
     if(query.length > 0) {
       props.setSearchResults([]);
-      fetch("http://localhost:3000/mock/searchResults.json?query="+query)
+      fetch("/mock/searchResults.json?query="+query)
       .then((res) => res.json())
       .then((json) => {
         props.setSearchResults(json);

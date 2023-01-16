@@ -19,7 +19,7 @@ export default function Home(props) {
 function PostSummaryContent() {
   const [postSummaryPage, setPostSummaryPage] = useState({});
   useEffect(() => {
-    fetch("http://localhost:3000/mock/postSummaryPage.json")
+    fetch("/mock/postSummaryPage.json")
       .then((res) => res.json())
       .then((json) => (setPostSummaryPage(json)));
   }, []);
