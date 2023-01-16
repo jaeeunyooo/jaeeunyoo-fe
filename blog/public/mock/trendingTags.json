@@ -1,0 +1,22 @@
+[
+    {
+        "tagId" : 1,
+        "tagName" : "Spring"
+    },
+    {
+        "tagId" : 2,
+        "tagName" : "Java"
+    },
+    {
+        "tagId" : 3,
+        "tagName" : "Career"
+    },
+    {
+        "tagId" : 4,
+        "tagName" : "Fishing"
+    },
+    {
+        "tagId" : 5,
+        "tagName" : "Writing"
+    }
+]

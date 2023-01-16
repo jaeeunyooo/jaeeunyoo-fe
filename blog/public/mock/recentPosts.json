@@ -1,0 +1,22 @@
+[
+    {
+        "postId" : 1,
+        "postTitle" : "[Mock] Writing a New Post"
+    },
+    {
+        "postId" : 2,
+        "postTitle" : "[Mock] Getting Started"
+    },
+    {
+        "postId" : 3,
+        "postTitle" : "[Mock] Text and Typography"
+    },
+    {
+        "postId" : 4,
+        "postTitle" : "[Mock] Enable Google Page Views"
+    },
+    {
+        "postId" : 5,
+        "postTitle" : "[Mock] Customize the Favicon"
+    }
+]
