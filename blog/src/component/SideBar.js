@@ -46,10 +46,10 @@ export default function SideBar(props) {
           <span>About</span>
           </a>
         </li>
-        <li className= { props.activatedMenu === 'Post' ? "nav-item active" : "nav-item" }>
-            <a href="/post" className="nav-link">
+        <li className= { props.activatedMenu === 'Edit' ? "nav-item active" : "nav-item" }>
+            <a href="/edit" className="nav-link">
               <i className="fa-fw fas fa-add ml-xl-3 mr-xl-3 unloaded"/>
-              <span>Post</span>
+              <span>Edit</span>
             </a>
         </li>
         <li className="nav-item"/>

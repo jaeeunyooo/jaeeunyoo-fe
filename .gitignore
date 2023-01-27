@@ -25,4 +25,4 @@ yarn-error.log*
 setupProxy.js
 
 .idea
-.idea/*
+.idea/**

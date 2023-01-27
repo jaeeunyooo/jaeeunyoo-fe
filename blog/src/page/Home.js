@@ -4,6 +4,7 @@ import Content from '../component/Content';
 import Footer from '../component/Footer';
 
 import { useEffect, useState } from 'react';
+import axios from "axios";
 
 export default function Home(props) {
   return (
@@ -19,9 +20,22 @@ export default function Home(props) {
 function PostSummaryContent() {
   const [postSummaryPage, setPostSummaryPage] = useState({});
   useEffect(() => {
-    fetch("/mock/postSummaryPage.json")
-      .then((res) => res.json())
-      .then((json) => (setPostSummaryPage(json)));
+    const url = "/api/blogs/1/posts";
+    const config = {
+      params : {
+        page: 0,
+        size:10
+      },
+      withCredentials: true
+    };
+
+    axios.get(url, config)
+      .then(res => res.data)
+      .then(data => data.data)
+      .then(data => {
+        console.log(data);
+        return setPostSummaryPage(data);
+      });
   }, []);
 
   return (
@@ -32,7 +46,7 @@ function PostSummaryContent() {
             <div key={postSummary.postId} id="post-list">
               <div className="post-preview">
                 <h1>
-                  <a href={"/posts/" + postSummary.postId}>{postSummary.postTitle}</a>
+                  <a href={"/posts/" + postSummary.postId}>{postSummary.title}</a>
                 </h1>
                 <div className="post-content">
                   <p>{postSummary.shortDescription}</p>
